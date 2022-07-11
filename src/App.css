@@ -2,37 +2,107 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a:link {
+  text-decoration: none;
+  color: rgb(37, 37, 37);
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title-app {
+  padding: 20px 0;
+  border-bottom: 1px solid rgb(240, 240, 240);
+  box-shadow: 2px 2px 10px rgb(212, 212, 212);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.add-contact {
+  background-color: rgb(235, 235, 235);
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 40px 280px;
 }
 
-.App-link {
-  color: #61dafb;
+.add-contact input,
+label,
+button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.addContact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+input {
+  outline: none;
+  border: none;
+  margin-top: 10px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.search {
+  background-color: rgb(240, 240, 240);
+  height:35px ;
+}
+
+input:focus {
+  border: 1px solid steelblue;
+}
+
+button {
+  outline: none;
+  border: none;
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 7px 10px 0 10px;
+  height: 30px;
+  background-color: steelblue;
+  color: aliceblue;
+}
+
+.contact-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid steelblue;
+  padding: 15px 280px;
+  
+}
+
+.content-left {
+ display: flex;
+ align-items: center;
+}
+
+.userInfo{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.userIcon {
+  margin-right: 20px;
+  font-size: 20px;
+  color: steelblue;
+}
+
+.FaTrashAlt {
+  font-size: 20px;
+  color: rgb(255, 0, 0);
+  cursor: pointer;
+}
+
+.FaEdit{
+  font-size: 20px;
+  color: rgb(0, 185, 9);
+  cursor: pointer;
+  margin-left: 10px;
+}
+
